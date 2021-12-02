@@ -1,15 +1,4 @@
-
-
-
 @media screen and (min-width: 1400px) {
-  .section-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1400px;
-    column-count: 2;
-    justify-content: center;
-  }
   section {
     padding: 1%;
     max-width: 45%;
@@ -21,7 +10,6 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 1400px;
-  column-count: 1;
   justify-content: center;
 }
 
