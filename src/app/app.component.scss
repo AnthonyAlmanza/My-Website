@@ -1,24 +1,21 @@
-@media screen and (min-width: 1400px) {
-  section {
-    padding: 1%;
-    max-width: 45%;
-  }
-}
-
 .section-box {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1400px;
+  max-width: 87.5rem;
   justify-content: center;
 }
 
 section {
-  padding: 0 1% 0 0;
-  width: 75%;
+  padding: 1rem;
+  max-width: 30rem;
 }
 
 .list-grid{
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
+}
+
+h1 {
+  color: #ffc000;
 }
