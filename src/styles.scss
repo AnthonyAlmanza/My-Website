@@ -3,11 +3,19 @@ body, html{
   justify-content: center;
   align-items: center;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #083653;
-  color: white;
+  background-color: #081728;
+  color: #f5f0f0;
 }
 
 a {
   text-decoration: underline;
-  color: orange;
+  color: #84CDD3;
+}
+
+a:hover{
+  color: #eea20f;
+}
+
+h1 {
+  color: #84CDD3;
 }
