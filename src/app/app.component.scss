@@ -12,8 +12,14 @@ section {
   width: 100%;
 }
 
+.footer {
+  width: 100%;
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+}
+
 .list-grid{
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(2, minmax(1rem, 8rem));
 }
 
