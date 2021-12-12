@@ -2,13 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 87.5rem;
+  max-width: 50rem;
   justify-content: center;
 }
 
 section {
   padding: 1rem;
-  max-width: 30rem;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .list-grid{
