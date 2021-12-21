@@ -38,3 +38,5 @@ jobs:
         build_dir: docs
         # Write the given domain name to the CNAME file
         fqdn: anthonyalmanza.com
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_ACTION_TOKEN }}
