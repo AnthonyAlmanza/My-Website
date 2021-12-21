@@ -28,3 +28,13 @@ jobs:
     
     - name: Build
       run: npm run build:ci
+      
+    - name: GitHub Pages
+    # uses: crazy-max/ghaction-github-pages@db4476a01402e1a7ce05f41832040eef16d14925
+      uses: crazy-max/ghaction-github-pages@v2.5.0
+      with:
+        # Git branch where assets will be deployed
+        target_branch: prod-build
+        build_dir: docs
+        # Write the given domain name to the CNAME file
+        fqdn: anthonyalmanza.com
