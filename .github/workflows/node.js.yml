@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -24,7 +24,19 @@ jobs:
       run: npm ci
       
     - name: Test
-      run: npm run test
+      run: npm run test:ci
     
     - name: Build
-      run: npm run build
+      run: npm run build:ci
+      
+    - name: GitHub Pages
+    # uses: crazy-max/ghaction-github-pages@db4476a01402e1a7ce05f41832040eef16d14925
+      uses: crazy-max/ghaction-github-pages@v2.5.0
+      with:
+        # Git branch where assets will be deployed
+        target_branch: prod-build
+        build_dir: docs
+        # Write the given domain name to the CNAME file
+        fqdn: anthonyalmanza.com
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_ACTION_TOKEN }}
