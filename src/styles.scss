@@ -1,23 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body, html{
   display:flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Encode Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #081728;
   color: #f5f0f0;
 }
 
+.header-medium {
+  font-size: 1.5rem;
+}
+.header-large {
+  font-size: clamp(40px, 8vw, 54px);
+}
+.no-margin {
+  margin: 0;
+}
+.text-glow {
+  text-decoration: none;
+  color: aqua;
+}
+p {
+  color: lightslategray;
+}
+li {
+  color: lightslategray;
+}
+h1 {
+  font-weight: bold;
+  color: #ccd6f6;
+}
+h2 {
+  color: lightslategray;
+}
 a {
   text-decoration: none;
-  color: #84bfc3;
+  color: aqua;
 }
-
 a:hover{
-  color: #eea20f;
-}
-
-h1 {
-  color: #88e2e9;
+  color: white;
 }
