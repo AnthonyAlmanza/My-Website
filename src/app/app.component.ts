@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  scrollTo(target: string) {
-    let el = document.getElementById(target);
-    if (el !== null) {
-      el.scrollIntoView();
-    }
-  }
 }

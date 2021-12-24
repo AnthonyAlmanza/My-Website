@@ -1,5 +1,5 @@
-<div class="section-box" role="main">
-  <section id="section-welcome">
+<div class="section-wrapper" role="main">
+  <section id="welcome">
     <h2 class="header-medium no-margin text-glow">Hey there, my name is</h2>
     <h1 class="header-large no-margin">Anthony Almanza.</h1>
     <h2 class="header-large no-margin">I create things for the internet.</h2>
@@ -7,13 +7,12 @@
       I'm a full-stack software engineer located in the US. I have a passion for technology
       and solving problems, most of the time with software.
     </p>
-    <div id="contact-me-div"
-         (click)="scrollTo('section-contact')">
-      Contact Me!
-    </div>
+      <a href="#contact">
+        <div id="contact-me-div">Contact Me!</div>
+      </a>
   </section>
-  <section id="section-about">
-    <h1>About me</h1>
+  <section id="about">
+    <h1 class="section-header">About me.</h1>
     <p>
       My interest in software development first sparked in middle school making simple Lua scripts for an MMO. This eventually
       led me to creating mods for some of mym favorite games at the time, fast-forward a few years to me going to college for
@@ -23,8 +22,8 @@
       Who would've guessed that making my characters spam messages in chat with a hotkey would've led me down this path.
     </p>
   </section>
-  <section id="section-experience">
-    <h1>What I've Used.</h1>
+  <section id="experience">
+    <h1 class="section-header">What I've Used.</h1>
     <p>
       I'm always excited to learn about new technologies to add to my skill-set.
       Throughout my career I've had the opportunity to use some fun technologies to accomplish my goals. These ranging from
@@ -41,17 +40,17 @@
       <li>HTML/CSS</li>
     </ul>
   </section>
-  <section id="section-projects">
-    <h1>My Work.</h1>
+  <section id="projects">
+    <h1 class="section-header">My Work.</h1>
     <p>
-      Fisher Investments - Software Engineer (July 2021 - Current)<br>
+      Software Engineer - Fisher Investments (July 2021 - Current)
     </p>
     <ul>
       <li>Built multiple back-end services in .NET utilizing RabbitMQ to automate various tasks.</li>
       <li>Created deployment plans for back-end services using TeamCity and Octopus Deploy.</li>
     </ul>
     <p>
-      Charles Schwab - Software Engineer (July 2018 - July 2021)<br>
+      Software Engineer - Charles Schwab (July 2018 - July 2021)
     </p>
     <ul>
       <li>Worked with a variety languages to create a full end to end application utilizing multiple RESTful web services
@@ -60,8 +59,8 @@
       <li>Utilized test-driven development and behavior-driven development in order to help facilitate code quality and maintainability.</li>
     </ul>
   </section>
-  <section id="section-contact">
-    <h1>Contact Me.</h1>
+  <section id="contact">
+    <h1 class="section-header">Contact Me.</h1>
     <p>Want to ask a question, or just say hi? Feel free to contact me on any of the following places.</p>
     <ul class="list-grid">
       <li><a href="mailto:Anthony.Almanza8@gmail.com" target="_blank">Email</a></li>
