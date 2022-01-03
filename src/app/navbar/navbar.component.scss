@@ -1,0 +1,24 @@
+.navbar-wrapper {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  text-align: right;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  transition: top 0.3s;
+  background-color: #0a192f80;
+  display: table;
+  box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
+}
+div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: .3rem .5rem;
+}
+a {
+  float: right;
+}
+#resume-button{
+  margin: 0 0 0 .5rem;
+}
