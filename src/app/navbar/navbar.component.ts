@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit{
   ngOnInit() {
     let prevScrollPos = window.pageYOffset;
     const myElement:HTMLElement | null = document.getElementById("navbar");
+
     window.onscroll = function() {
       let currentScrollPos = window.pageYOffset;
       if (myElement) {
