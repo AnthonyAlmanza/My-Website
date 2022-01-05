@@ -5,8 +5,7 @@ body, html{
   justify-content: center;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
-  background-color: #0a192f;
-  color: #ccd6f6;
+  background-color: #121829;
   scroll-behavior: smooth
 }
 
@@ -19,18 +18,14 @@ body, html{
 .no-margin {
   margin: 0;
 }
-.text-glow {
-  text-decoration: none;
-  color: turquoise;
-}
 .button-highlight {
-  border: 1px solid turquoise;
+  border: 1px solid #E45946;
   border-radius: .2rem;
   position: relative;
   overflow: hidden;
   z-index: 0;
   transition: color 150ms ease-in-out;
-  color: turquoise;
+  color: #E45946;
   &:after {
     content: '';
     position: absolute;
@@ -40,7 +35,7 @@ body, html{
     transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: turquoise;
+    background: #E45946;
     z-index: -1;
     transition: width 150ms ease-in-out;
   }
@@ -51,24 +46,33 @@ body, html{
     }
   }
 }
+
+.text-white {
+  color: white;
+}
+.text-highlight{
+  color: #E45946;
+}
+.text-off-white {
+
+}
 p {
-  color: lightslategray;
+  color: rgba(255,255,255,.5);
 }
 li {
-  color: lightslategray;
+  color: rgba(255,255,255,.5);
 }
 h1 {
   font-weight: bold;
   margin-bottom: 0;
-  color: #ccd6f6;
 }
 h2 {
-  color: lightslategray;
+  color: rgba(255,255,255,.5);
 }
 a {
+  color: #E45946;
   text-decoration: none;
-  color: turquoise;
 }
 a:hover{
-  color: #ccd6f6;
+  color: white;
 }
