@@ -1,9 +1,4 @@
-@media only screen and (max-height: 27rem){
-  #navbar {
-    display: none;
-  }
-}
-@media only screen and (max-width: 27rem){
+@media only screen and (max-height: 27rem), (max-width: 27rem){
   #navbar {
     display: none;
   }
