@@ -10,10 +10,13 @@ body, html{
 }
 
 .header-medium {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 .header-large {
-  font-size: clamp(40px, 8vw, 54px);
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+}
+.text-size-med {
+  font-size: 1.125rem;
 }
 .no-margin {
   margin: 0;
