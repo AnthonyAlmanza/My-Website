@@ -1,3 +1,13 @@
+@media only screen and (max-height: 27rem){
+  #navbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 27rem){
+  #navbar {
+    display: none;
+  }
+}
 .navbar-wrapper {
   position: fixed;
   right: 0;
