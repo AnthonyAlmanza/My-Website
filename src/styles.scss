@@ -28,13 +28,14 @@ body, html{
   margin: 0;
 }
 .button-highlight {
-  border: 1px solid #FFA036FF;
+  font-weight: 700;
+  border: 3px solid #ffffff;
   border-radius: 5rem;
   position: relative;
   overflow: hidden;
   z-index: 0;
   transition: color 150ms ease-in-out;
-  color: #FFA036FF;
+  color: #ffffff;
   &:after {
     content: '';
     position: absolute;
@@ -44,7 +45,7 @@ body, html{
     transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: #FFA036FF;
+    background: #ffffff;
     z-index: -1;
     transition: width 150ms ease-in-out;
   }
