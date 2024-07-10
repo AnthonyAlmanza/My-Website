@@ -4,6 +4,7 @@ section {
   width: var(--section-width);
   z-index: 2;
 }
+
 .hero-image {
   position: absolute;
   width: 100%; /* Adjust the size of the square */
@@ -18,9 +19,11 @@ section {
 .bold {
   font-weight: 700;
 }
+
 .italic {
   font-style: italic;
 }
+
 .section-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -28,23 +31,13 @@ section {
   justify-content: center;
   padding: 0 1rem;
 }
+
 .footer {
   width: 100%;
   width: var(--section-width);
   padding: 4rem 0 2rem 0;
+  margin-bottom: 1rem;
   text-align: center;
-  z-index: 1; /* Ensure the square is behind the content */
-}
-
-.footer-image {
-  position: absolute;
-  width: 100%; /* Adjust the size of the square */
-  height: 45rem; /* Adjust the size of the square */
-  background-color: #ffa036; /* Background color of the square */
-  background-image: linear-gradient(0, #141735, #1a3765 25%);
-  clip-path: polygon(0 90%, 100% 75%, 100% 100%, 0% 100%);
-  left: 0;
-  top: 113rem;
   z-index: 1; /* Ensure the square is behind the content */
 }
 
@@ -54,6 +47,7 @@ section {
   height: 2rem;
   z-index: 2;
 }
+
 .list-grid {
   --grid-layout-gap: 0rem;
   --grid-column-count: 2; /* This gets overridden by an inline style. */
