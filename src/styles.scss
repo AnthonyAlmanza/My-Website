@@ -28,6 +28,7 @@ body, html{
   margin: 0;
 }
 .button-highlight {
+  display: flex;
   font-weight: 700;
   border: 3px solid #ffffff;
   border-radius: 5rem;
@@ -39,7 +40,6 @@ body, html{
   &:after {
     content: '';
     position: absolute;
-    display: block;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
