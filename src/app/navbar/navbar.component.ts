@@ -9,17 +9,5 @@ export class NavbarComponent implements OnInit{
 
   constructor() { }
   ngOnInit() {
-    let prevScrollPos = window.pageYOffset;
-    const myElement:HTMLElement | null = document.getElementById("navbar");
-
-    window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset;
-      if (myElement) {
-        myElement.style.top = (prevScrollPos > currentScrollPos)
-          ? "0"
-          : "-5rem";
-      }
-      prevScrollPos = currentScrollPos;
-    }
   }
 }

@@ -1,11 +1,11 @@
 section {
-  padding: 6.25rem 0;
+  padding: 0 0 4rem 0;
   margin: 0;
-  width: 100%;
+  width: var(--section-width);
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 .italic {
   font-style: italic;
@@ -13,12 +13,12 @@ section {
 .section-wrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 50rem;
+  max-width: var(--section-width);
   justify-content: center;
   padding: 0 1rem;
 }
 .footer {
-  width: 100%;
+  width: var(--section-width);
   padding: 4rem 0 2rem 0;
   text-align: center;
 }
@@ -41,6 +41,19 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
   grid-gap: var(--grid-layout-gap);
 }
+
+.overlap{
+  display: block;
+}
+
+.overlap:first-of-type {
+  margin-bottom: -2.5rem; /* Adjust the overlap value */
+}
+
+.overlap:last-of-type {
+  margin-top: -2.5rem; /* Adjust the overlap value */
+}
+
 .section-header {
   display: flex;
   align-items: center;
@@ -53,18 +66,41 @@ section {
   background-color: rgba(255,255,255,.5);
 }
 #welcome {
-  display: flex;
   -moz-box-pack: center;
   justify-content: center;
   -moz-box-align: center;
-  flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  padding: 0;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content;
+}
+
+.about-text{
+  text-align: right;
+  margin-top: 6.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .about-text{
+    text-align: left;
+    margin-top: 0;
+  }
+  #welcome{
+    padding-bottom: 10rem;
+  }
+}
+
 #contact-me-div {
   padding: .8rem 1.6rem;
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
+  max-width: 5.6rem;
 }
 #resume-button-wrapper {
   display: flex;

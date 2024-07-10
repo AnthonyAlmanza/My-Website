@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root{
+  --section-width: clamp(16rem, 90vw, 1600px);
+}
 body, html{
+  scroll-padding-top: 4rem;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -13,22 +16,25 @@ body, html{
   font-size: 1.75rem;
 }
 .header-large {
-  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-size: clamp(6rem, 8vw, 8rem);
 }
 .text-size-med {
-  font-size: 1.125rem;
+  font-size: 1.6rem;
+}
+.text-size-small{
+  font-size: 1.25rem;
 }
 .no-margin {
   margin: 0;
 }
 .button-highlight {
-  border: 1px solid #E45946;
-  border-radius: .2rem;
+  border: 1px solid #FFA036FF;
+  border-radius: 5rem;
   position: relative;
   overflow: hidden;
   z-index: 0;
   transition: color 150ms ease-in-out;
-  color: #E45946;
+  color: #FFA036FF;
   &:after {
     content: '';
     position: absolute;
@@ -38,7 +44,7 @@ body, html{
     transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: #E45946;
+    background: #FFA036FF;
     z-index: -1;
     transition: width 150ms ease-in-out;
   }
@@ -54,7 +60,7 @@ body, html{
   color: white;
 }
 .text-highlight{
-  color: #E45946;
+  color: #FFA036FF;
 }
 .text-off-white {
 
@@ -66,14 +72,14 @@ li {
   color: rgba(255,255,255,.5);
 }
 h1 {
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0;
 }
 h2 {
   color: rgba(255,255,255,.5);
 }
 a {
-  color: #E45946;
+  color: #FFA036FF;
   text-decoration: none;
 }
 a:hover{
