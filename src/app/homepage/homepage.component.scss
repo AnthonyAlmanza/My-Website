@@ -2,6 +2,17 @@ section {
   padding: 0 0 4rem 0;
   margin: 0;
   width: var(--section-width);
+  z-index: 2;
+}
+.hero-image {
+  position: absolute;
+  width: 100%; /* Adjust the size of the square */
+  height: 45rem; /* Adjust the size of the square */
+  background-color: #ffa036; /* Background color of the square */
+  background-image: linear-gradient(0, #1a3765, #141735);
+  clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
+  left: 0;
+  z-index: 1; /* Ensure the square is behind the content */
 }
 
 .bold {
@@ -18,21 +29,37 @@ section {
   padding: 0 1rem;
 }
 .footer {
+  width: 100%;
+  margin-inline: auto;
   width: var(--section-width);
   padding: 4rem 0 2rem 0;
   text-align: center;
+  z-index: 1; /* Ensure the square is behind the content */
+}
+
+.footer-image {
+  position: absolute;
+  width: 100%; /* Adjust the size of the square */
+  height: 45rem; /* Adjust the size of the square */
+  background-color: #ffa036; /* Background color of the square */
+  background-image: linear-gradient(0, #141735, #1a3765 25%);
+  clip-path: polygon(0 90%, 100% 75%, 100% 100%, 0% 100%);
+  left: 0;
+  top: 113rem;
+  z-index: 1; /* Ensure the square is behind the content */
+}
+
+.github-image {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  z-index: 2;
 }
 .list-grid {
-  /**
-     * User input values.
-   */
   --grid-layout-gap: 0rem;
   --grid-column-count: 2; /* This gets overridden by an inline style. */
   --grid-item--min-width: 8rem; /* This gets overridden by an inline style. */
 
-  /**
-   * Calculated values.
-   */
   --gap-count: calc(var(--grid-column-count) - 1);
   --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
   --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
@@ -108,7 +135,6 @@ section {
 }
 #resume-button {
   display: block;
-  width: 6rem;
   text-align: center;
   div{
     padding: .5rem;
