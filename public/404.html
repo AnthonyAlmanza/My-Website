@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="0; URL=./">
+        <script type="text/javascript">
+            // Redirect to index.html
+            (
+                function () {
+                let redirectTo = window.location.pathname;
+                window.location.href = window.location.origin + redirectTo;
+            })();
+        </script>
+    </head>
+    <body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+            body {
+                font-family: 'Open Sans', sans-serif;
+                background-color: #121829;
+                color: darkgrey;
+                text-align: center;
+            }
+            a {
+                color: #FFA036FF;
+                text-decoration: none;
+            }
+            a:hover{
+                color: white;
+            }
+        </style>
+        <p>If you are not redirected automatically, <a href="../src/pages"><br>Click Here</a></p>
+    </body>
+</html>
