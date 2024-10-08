@@ -1,0 +1,1 @@
+export const WebsiteName = 'Anthony Almanza';  // Global website name
