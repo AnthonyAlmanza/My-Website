@@ -1,3 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* OLD CSS */
+:root{
+  --section-width: clamp(16rem, 90vw, 1600px);
+}
+body, html{
+  scroll-padding-top: 4rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #121829;
+  scroll-behavior: smooth
+}
+
+.header-medium {
+  font-size: 1.75rem;
+}
+.header-large {
+  font-size: clamp(6rem, 8vw, 8rem);
+}
+.text-size-med {
+  font-size: 1.6rem;
+}
+.text-size-small{
+  font-size: 1.25rem;
+}
+.no-margin {
+  margin: 0;
+}
+.button-highlight {
+  display: flex;
+  font-weight: 700;
+  border: 3px solid #ffffff;
+  border-radius: 5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 150ms ease-in-out;
+  color: #ffffff;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+  }
+  &:hover {
+    color: #081728;
+    &:after {
+      width: 110%;
+    }
+  }
+}
+
+.text-white {
+  color: white;
+}
+.text-highlight{
+  color: #FFA036FF;
+}
+.text-off-white {
+
+}
+p {
+  color: rgba(255,255,255,.5);
+}
+li {
+  color: rgba(255,255,255,.5);
+}
+h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h2 {
+  color: rgba(255,255,255,.5);
+}
+a {
+  color: #FFA036FF;
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+
 section {
   padding: 0 0 4rem 0;
   margin: 0;
@@ -33,7 +123,6 @@ section {
 }
 
 .footer {
-  width: 100%;
   width: var(--section-width);
   padding: 4rem 0 2rem 0;
   margin-bottom: 1rem;
@@ -120,7 +209,7 @@ section {
 #contact-me-div {
   padding: .8rem 1.6rem;
   margin: 2rem 0 0 0;
-  max-width: 6rem;
+  max-width: 7.2rem;
 }
 #resume-button-wrapper {
   display: flex;
