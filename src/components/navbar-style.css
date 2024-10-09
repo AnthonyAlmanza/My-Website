@@ -6,9 +6,7 @@
     z-index: 1000; /* Ensure it stays on top */
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid rgb(53, 63, 81);
-    backdrop-filter: blur(10px); /* Add blur effect to content behind the navbar */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    background-color: var(--background-color);
 }
 
 .navbar {
@@ -29,15 +27,16 @@
     max-height: 2rem;
 }
 
-.link-container {
-    display:flex;
-    align-content: flex-end;
-    align-items: center;
-    gap: 1.2rem;
-    list-style-type: none;
+#navbar-link-container{
     flex-direction: row-reverse;
 }
 
-div {
+.navbar-link{
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 0 3rem;
+    }
 }

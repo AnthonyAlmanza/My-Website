@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import { WebsiteName } from "../config/config.ts";
-import DownloadImage from '../assets/download.svg';
 import GithubImage from '../assets/github-mark-white.svg';
 
 const pageName = "Home";
@@ -11,7 +10,6 @@ const HomePage: React.FC = () => {
     })
     return (
         <div id="home-component">
-            <div className="hero-image"></div>
             <div className="section-wrapper" role="main">
                 <section id="welcome" className="grid">
                     <div className="name-text">
@@ -25,9 +23,6 @@ const HomePage: React.FC = () => {
                             I am a software engineer with a passion for games, technology, and problem-solving.
                         </p>
                     </div>
-                    <a href="#contact">
-                        <div id="contact-me-div" className="button-highlight">Contact Me!</div>
-                    </a>
                 </section>
                 <section id="about">
                     <h1 className="section-header text-white">About me</h1>
@@ -50,9 +45,7 @@ const HomePage: React.FC = () => {
                             Throughout my career I've had the opportunity to use some fun technologies to accomplish my goals. These ranging from
                             front-end frameworks to back-end technologies, and all the tooling in-between.
                         </p>
-                        <p>
-                                Here are a few of the technologies I've been working with recently:
-                        </p>
+                        <p id="recent-tech">Here are a few of the technologies I've been working with recently:</p>
                         <ul className="list-grid">
                             <li>Unity</li>
                             <li>C#</li>
@@ -60,6 +53,7 @@ const HomePage: React.FC = () => {
                             <li>Javascript</li>
                             <li>Typescript</li>
                             <li>Angular</li>
+                            <li>React</li>
                             <li>HTML/CSS</li>
                         </ul>
                     </div>
@@ -94,21 +88,12 @@ const HomePage: React.FC = () => {
                             <li>Utilized test-driven development and behavior-driven development in order to help facilitate code quality and maintainability.</li>
                         </ul>
                     </div>
-                    <div id="resume-button-wrapper">
-                        <a id="resume-button"
-                           href="https://raw.githubusercontent.com/AnthonyAlmanza/My-Resume/main/AnthonyAlmanza_Resume.pdf"
-                           target="_blank">
-                            <div className="button-highlight">
-                                Resumé <img className="download-image" src={DownloadImage} alt=""/>
-                            </div>
-                        </a>
-                    </div>
                 </section>
                 <section id="contact">
                     <h1 className="section-header text-white">Contact Me.</h1>
                     <div className="text-size-small">
                         <p>Want to ask a question, or just say hi? Feel free to contact me on any of the following places.</p>
-                        <ul className="list-grid">
+                        <ul className="link-container">
                             <li><a href="mailto:Anthony.Almanza8@gmail.com" target="_blank">Email</a></li>
                             <li><a href="https://www.linkedin.com/in/MarkAnthonyAlmanzaJr/" target="_blank">LinkedIn</a></li>
                             <li><a href="https://github.com/AnthonyAlmanza" target="_blank">GitHub</a></li>
