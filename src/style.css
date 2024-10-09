@@ -34,35 +34,6 @@ body, html{
 .no-margin {
   margin: 0;
 }
-.button-highlight {
-  display: flex;
-  font-weight: 700;
-  border: 3px solid white;
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-  transition: color 150ms ease-in-out;
-  color: white;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 100%;
-    background: white;
-    z-index: -1;
-    transition: width 150ms ease-in-out;
-  }
-  &:hover {
-    color: var(--background-color);
-    &:after {
-      width: 110%;
-    }
-  }
-}
 
 .text-white {
   color: white;
@@ -88,13 +59,13 @@ h1 {
   margin: 0;
 }
 
-a {
+.underline-animation {
   text-decoration: none;
   position: relative;
   color: white;
 }
 
-a::before {
+.underline-animation::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -108,7 +79,7 @@ a::before {
   transition: transform .2s ease-in-out;
 }
 
-a:hover::before {
+.underline-animation:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }

@@ -94,10 +94,10 @@ const HomePage: React.FC = () => {
                     <div className="text-size-small">
                         <p>Want to ask a question, or just say hi? Feel free to contact me on any of the following places.</p>
                         <ul className="link-container">
-                            <li><a href="mailto:Anthony.Almanza8@gmail.com" target="_blank">Email</a></li>
-                            <li><a href="https://www.linkedin.com/in/MarkAnthonyAlmanzaJr/" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://github.com/AnthonyAlmanza" target="_blank">GitHub</a></li>
-                            <li><a href="https://twitter.com/AnthonyAlmanza_" target="_blank">Twitter</a></li>
+                            <li><a className="underline-animation" href="mailto:Anthony.Almanza8@gmail.com" target="_blank">Email</a></li>
+                            <li><a className="underline-animation" href="https://www.linkedin.com/in/MarkAnthonyAlmanzaJr/" target="_blank">LinkedIn</a></li>
+                            <li><a className="underline-animation" href="https://github.com/AnthonyAlmanza" target="_blank">GitHub</a></li>
+                            <li><a className="underline-animation" href="https://twitter.com/AnthonyAlmanza_" target="_blank">Twitter</a></li>
                         </ul>
                     </div>
                 </section>
