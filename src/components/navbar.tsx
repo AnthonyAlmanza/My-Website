@@ -7,7 +7,9 @@ const Navbar: React.FC = () => {
         <div className="navbar-wrapper">
             <div className="navbar">
                 <div className="logo-container">
-                    <img className="logo-image" id="logo-png" src={Logo}/>
+                    <a href="/" className="underline-animation">
+                        <img className="logo-image" id="logo-png" src={Logo}/>
+                    </a>
                 </div>
                 <ul id="navbar-link-container" className="link-container">
                     <li><a className="underline-animation navbar-link" href="#contact">Contact</a></li>
