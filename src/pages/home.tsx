@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import { WebsiteName } from "../config/config.ts";
 import GithubImage from '../assets/github-mark-white.svg';
+import {SkillGrid} from "../components/skills.tsx";
 
 const pageName = "Home";
 
@@ -46,16 +47,7 @@ const HomePage: React.FC = () => {
                             front-end frameworks to back-end technologies, and all the tooling in-between.
                         </p>
                         <p id="recent-tech">Here are a few of the technologies I've been working with recently:</p>
-                        <ul className="list-grid">
-                            <li>Unity</li>
-                            <li>C#</li>
-                            <li>.NET</li>
-                            <li>Javascript</li>
-                            <li>Typescript</li>
-                            <li>Angular</li>
-                            <li>React</li>
-                            <li>HTML/CSS</li>
-                        </ul>
+                        <SkillGrid/>
                     </div>
                 </section>
                 <section id="work">
@@ -66,15 +58,20 @@ const HomePage: React.FC = () => {
                             <span className="italic">(March 2022 - March 2024)</span>
                         </p>
                         <ul className="text-size-small">
-                            <li>Worked on a multiplatform Unity application compatible with Meta Quest, Windows, and WebGL.</li>
-                            <li>Focused on automation of testing and optimization processes, utilizing PowerShell and Azure Pipelines.</li>
+                            <li>Worked on a multiplatform Unity application compatible with Meta Quest, Windows, and
+                                WebGL.
+                            </li>
+                            <li>Focused on automation of testing and optimization processes, utilizing PowerShell and
+                                Azure Pipelines.
+                            </li>
                         </ul>
                         <p>
                             <span className="bold text-white">Software Engineer - Fisher Investments </span>
                             <span className="italic">(July 2021 - March 2022)</span>
                         </p>
                         <ul className="text-size-small">
-                            <li>Built multiple back-end services in .NET utilizing RabbitMQ to automate various tasks.</li>
+                            <li>Built multiple back-end services in .NET utilizing RabbitMQ to automate various tasks.
+                            </li>
                             <li>Created deployment plans for back-end services using TeamCity and Octopus Deploy.</li>
                         </ul>
                         <p>
@@ -82,17 +79,24 @@ const HomePage: React.FC = () => {
                             <span className="italic">(July 2018 - July 2021)</span>
                         </p>
                         <ul className="text-size-small">
-                            <li>Worked with a variety languages to create a full end to end application utilizing multiple RESTful web services
-                                built in C#/.NET, and Angular for the front-end application.</li>
-                            <li>Worked cross-functionally with multiple teams in order to create a great user experience for the application.</li>
-                            <li>Utilized test-driven development and behavior-driven development in order to help facilitate code quality and maintainability.</li>
+                            <li>Worked with a variety languages to create a full end to end application utilizing
+                                multiple RESTful web services
+                                built in C#/.NET, and Angular for the front-end application.
+                            </li>
+                            <li>Worked cross-functionally with multiple teams in order to create a great user experience
+                                for the application.
+                            </li>
+                            <li>Utilized test-driven development and behavior-driven development in order to help
+                                facilitate code quality and maintainability.
+                            </li>
                         </ul>
                     </div>
                 </section>
                 <section id="contact">
                     <h1 className="section-header text-white">Contact Me.</h1>
                     <div className="text-size-small">
-                        <p>Want to ask a question, or just say hi? Feel free to contact me on any of the following places.</p>
+                        <p>Want to ask a question, or just say hi? Feel free to contact me on any of the following
+                            places.</p>
                         <ul className="link-container">
                             <li><a className="underline-animation" href="mailto:Anthony.Almanza8@gmail.com" target="_blank">Email</a></li>
                             <li><a className="underline-animation" href="https://www.linkedin.com/in/MarkAnthonyAlmanzaJr/" target="_blank">LinkedIn</a></li>
