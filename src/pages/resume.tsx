@@ -3,6 +3,7 @@ import {WebsiteName} from "../config/config.ts";
 import './resume.css';
 
 const pageName = "Resume";
+const resumeSource = "https://anthonyalmanza.github.io/My-Resume/AnthonyAlmanza_Resume.pdf";
 
 const ResumePage: React.FC = () => {
     useEffect(() => {
@@ -11,7 +12,7 @@ const ResumePage: React.FC = () => {
 
     return (
         <div className="navbar-buffer">
-            <iframe className="resume-iframe" src="https://anthonyalmanza.github.io/My-Resume/AnthonyAlmanza_Resume.pdf">
+            <iframe className="resume-iframe" src={resumeSource}>
             </iframe>
         </div>
     );
