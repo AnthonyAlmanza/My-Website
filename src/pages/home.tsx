@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import { WebsiteName } from "../config/config.ts";
 import GithubImage from '../assets/github-mark-white.svg';
 import {SkillGrid} from "../components/skills.tsx";
+import {Link} from "react-router-dom";
 
 const pageName = "Home";
 
@@ -101,7 +102,7 @@ const HomePage: React.FC = () => {
                             <li><a className="underline-animation" href="mailto:Anthony.Almanza8@gmail.com" target="_blank">Email</a></li>
                             <li><a className="underline-animation" href="https://www.linkedin.com/in/MarkAnthonyAlmanzaJr/" target="_blank">LinkedIn</a></li>
                             <li><a className="underline-animation" href="https://github.com/AnthonyAlmanza" target="_blank">GitHub</a></li>
-                            <li><a className="underline-animation" href="https://twitter.com/AnthonyAlmanza_" target="_blank">Twitter</a></li>
+                            <li><Link className="underline-animation" to="/resume">Resumé</Link></li>
                         </ul>
                     </div>
                 </section>

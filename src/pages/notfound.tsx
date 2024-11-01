@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {WebsiteName} from "../config/config.ts";
 import './notfound.css'
+import {Link} from "react-router-dom";
 
 const pageName = "Page Not Found";
 
@@ -13,7 +14,7 @@ const NotFoundPage: React.FC = () => {
             <p className="header-medium">
                 404 - You found a dead end!
                 <br/>
-                <a className="underline-animation" href="https://anthonyalmanza.com">Go back home</a>
+                <Link className="underline-animation" to="/">Go back home</Link>
             </p>
         </div>
     );
